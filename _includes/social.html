@@ -1,0 +1,21 @@
+<div class="social">
+	<h4>
+
+    {% if site.email %}
+	  <a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i></a>
+    {% endif %}
+    {% if site.linkedin %}
+	  <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>
+    {% endif %}
+    {% if site.gscholar %}
+      <a href="https://scholar.google.com/citations?hl=en&user={{ site.gscholar }}"><i class="ai ai-google-scholar"></i></a>
+    {% endif %}
+    {% if site.rgate %}
+      <a href="https://www.researchgate.net/profile/{{ site.rgate }}"><i class="ai ai-researchgate"></i></a>
+    {% endif %}
+    {% if site.github %}
+      <a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>
+    {% endif %}
+
+	</h4>
+</div>
