@@ -3,27 +3,23 @@
     <a class="navbar-brand" href="https://scholar.google.com/citations?hl=en&user={{ site.gscholar }}"><i class="ai ai-google-scholar"></i>Google Scholar profile </a>
     <a class="navbar-brand" href="https://www.researchgate.net/profile/{{ site.rgate }}"><i class="ai ai-researchgate"></i>ResearchGate profile</a>
     </br>
-    <div class="panel panel-default">
-    <div class="panel-body">
+
     <a href="#publications">Publications</a><br/>
     <a href="#software">Open-source software</a><br/>
     <a href="#posters">Posters</a><br/>
     <a href="#talks">Talks</a><br/>
 
-<h3> <a name="publications" id="publications">Publications</a></h3>
-{% include pbalapra-bibtex.html %}
+    <h3> <a name="publications" id="publications">Publications</a></h3>
+    {% include pbalapra-bibtex.html %}
 
-<h3> <a name="software" id="software">Open-source software</a></h3>
-{% include pbalapra-software.html %}
+    <h3> <a name="software" id="software">Open-source software</a></h3>
+    {% include pbalapra-software.html %}
 
-<h3> <a name="posters" id="posters">Posters and poster extended abstracts (peer reviewed)</a></h3>
-{% include pbalapra-posters.html %}
+    <h3> <a name="posters" id="posters">Posters and poster extended abstracts (peer reviewed)</a></h3>
+    {% include pbalapra-posters.html %}
 
-<h3> <a name="talks" id="talks">Talks</a></h3>
-{% include pbalapra-presentations.html %}
-
-    </div>
-    </div>
-  </div>
+    <h3> <a name="talks" id="talks">Talks</a></h3>
+    {% include pbalapra-presentations.html %}
+</div>
 
 </section>
