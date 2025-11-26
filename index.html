@@ -1,164 +1,184 @@
----
-layout: home
-title: Home Page of Prasanna Balaprakash
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanna Balaprakash | AI Founder & Architect</title>
+    <style>
+        :root {
+            /* Minimalist Dark Theme */
+            --bg-color: #0d0d0d;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent-color: #3b82f6; 
+            --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
 
- <section id="about">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-	<div class="container">
-        <center>
-        <table width="700">
-          <tr>
-            <td>
-        	  <div class="avatar">
-        		<img class="img-rounded" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image">
-              </div>
-            </td>
-            <td>
+        .container {
+            max-width: 700px;
+            width: 90%;
+            padding: 80px 20px;
+        }
 
-            </td>
-            <td>
-                <h4><strong>{{ site.author }}</strong></h4>
-                <strong>Director of AI Programs | Section Head, Data and AI Systems </strong> <br/>
-		<strong>Distinguished R&D Staff Scientist</strong> <br/>
-		    
-                <a href="https://www.ornl.gov/directorate/ccsd" target="_blank"> Computing and Computational Sciences Directorate </a> <br/>
-                <a href="http://www.ornl.gov" target="_blank">Oak Ridge National Laboratory</a><br />
-                Building 5700, Room G215, Mail Stop 6164 <br />
-                P.O. Box 2008, 1 Bethel Valley Road <br />
-                Oak Ridge, TN 37831 <br />
-                <i class="fa fa-phone"></i> 865-576-9087 (Please avoid cold calls/solicitations)<br/> 
-                <i class="fa fa-envelope"></i> pbalapra (at) ornl (dot) gov <br />
-          </td>            
+        /* Header Section */
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.03em;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        /* The Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--text-primary);
+            color: var(--bg-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: transform 0.1s ease, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #e4e4e7;
+            transform: translateY(-1px);
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .item {
+            margin-bottom: 30px;
+        }
+
+        .item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .item p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .highlight {
+            color: #e4e4e7; 
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            display: flex;
+            gap: 25px;
+        }
+        
+        a.link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+            transition: all 0.2s;
+        }
+
+        a.link:hover {
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--text-primary);
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Prasanna Balaprakash</h1>
+            <p class="tagline">Co-founder & CEO at PrimaLabs. <br>Ex-Director of AI at ORNL.</p>
+            <a href="./cv.pdf" class="btn" target="_blank">Download Full CV ↓</a>
+        </header>
+
+        <section>
+            <h2>The Pitch</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                I bridge the gap between Exascale research and commercial AI. With a background managing a $200M+ portfolio and training trillion-parameter models on the world's fastest supercomputers, I now build secure, energy-efficient AI systems that solve hard problems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Engineering & Scale</h2>
             
-            <!--
-            <td>
-                  <h4><strong>{{ site.author }}</strong></h4>
-                  <strong>R&D Lead and Computer Scientist</strong> <br/>
-                  <a href="http://www.mcs.anl.gov" target="_blank"> Mathematics and Computer Science Division</a> & <br/> <a href="http://www.alcf.anl.gov" target="_blank"> Leadership Computing Facility </a> <br/>
-                  <a href="http://www.anl.gov" target="_blank">Argonne National Laboratory</a><br />
-                  9700 S. Cass Avenue<br />
-                  Bldg. 240, Room. 1135<br />
-                  Lemont, IL 60439<br />
-                  <i class="fa fa-phone"></i> (630) 252-1109<br />
-                  <i class="fa fa-envelope"></i> pbalapra (at) anl (dot) gov <br />
-            </td>
-            -->
-        </tr>
-        </table>
-    </center>
-         <!-- {% include social.html %} -->
-     </div>
-     </section>
-     
-<div class="container">
-     <div class="panel panel-default">
-         <div class="panel-body">
-
-            <!--
-            <p>News:</p><br>>
-
-            <ul class="itemize1" align="justify">
-                <li class="itemize">New DOE ASCR funded project. PosEiDon: Platform for Explainable Distributed Infrastructure</li>    
-                <li class="itemize">New DOE EERE funded project. Probabilistic Machine Learning for Rapid Large-Scale and High-Rate Aerostructure Manufacturing</li>               
-            </ul>
-            -->
-
-	 	<p align="justify">
-		Since May 2025, I am serving as the Section Head of the <a href="https://www.ornl.gov/section/data-ai target="_blank"> Data and AI Systems</a>, Computer Science and Mathematics Division, Computing and Computational Sciences Directorate. 
-		My responsibilities include providing strategic leadership for a section of 45 researchers and engineers across five specialized groups (Learning Systems, Visualization, Workflow Systems, Data Engineering, and Performance Engineering); leading advanced R&D programs while collaborating with division leadership to define research vision and priorities; and directing recruitment initiatives, performance evaluations, and career development to maintain a diverse, high-caliber scientific workforce.
-		</p>
-		 
-                <p align="justify">
-			
-		Since March 2023, I am serving as the Director of Artificial Intelligence (AI) programs at Oak Ridge National Laboratory (ORNL). 
-		I direct the ORNL’s  <a href="https://www.ornl.gov/ai-initiative" target="_blank">Artificial Intelligence Initiative</a>, a multimillion-dollar Laboratory Directed Research and Development portfolio. 
-		I set the strategic vision for AI for science portfolio and develop plans and execute them.
-		I seek to deliver foundational, scalable, and applied AI/ML capabilities that support the broad mission of ORNL, providing world-class solutions in areas such as computer and computational science, materials science, manufacturing, energy, and climate science.
-		</p>
-
-		<p align="justify">
-		The ORNL’s AI  initiative focuses on the development of secure, trustworthy, and energy-efficient AI solutions to tackle problems of national importance. 
-		The initiative's portfolio comprises more than 10 advanced AI projects and involves over 50 researchers from across the lab.
-		Through the AI Initiative's AI Academy, I engage with more than 100 ORNL AI researchers to promote the adoption of secure, trustworthy, and energy-efficient AI methods. 
-		This engagement is facilitated through several workforce development activities for the lab, including the 
-			<a href="https://www.ornl.gov/ai-initiative/workforce-development" target="_blank">AI Summer Institute</a>, 
-			<a href="https://ornl.github.io/events/ai-tutorials-series-2024/" target="_blank">AI Tutorial Series for Science</a>, 
-			<a href="https://www.openhackathons.org/s/siteevent/a0CUP000006I4B12AK/se000328" target="_blank">AI for Science Bootcamps</a>, 
-			<a href="https://ornl.github.io/events/genAI-July-2023/" target="_blank">AI Workshops</a>, 
-			<a href="https://www.ornl.gov/event/ai-expo" target="_blank">AI Expo</a>, and 
-			<a href="https://ornl.github.io/events/ai-initiative-seminar-2024/" target="_blank">AI Seminar Series</a>. 
-		</p>
-
-		 <p align="justify">
-		 Appointed by Tennessee State Governor, I serve as a member of the newly formed <a href="https://www.tn.gov/lawsandpolicies/policies/artificial-intelligence-council.html" target="_blank">Tennessee AI Advisory Council</a>. 
-		 </p>
-		 
-
-		 
-		<p align="justify">
-		My research interests span the areas of AI, machine learning, optimization, and high-performance computing. I serve as AI lead for several DOE-funded projects:  
-                </p>
-		<ul class="itemize1" align="justify">
-		<li class="itemize"> SciGPT: Scalable Foundational Model for Scientific Machine Learning </li>
-		<li class="itemize"> <a href="https://swarm-workflows.github.io/" target="_blank">SWARM: Distributed Resilient System</a>, Co-Investigator and AI Lead </li>
-		<li class="itemize"> <a href="https://www.anl.gov/csteel" target="_blank">C-STEEL: Center for Steel Electrification by Electrosynthesis</a>, AI Lead </li>
-		<li class="itemize"> <a href="https://rapids.lbl.gov/" target="_blank">RAPIDS2: A SciDAC Institute for Computer Science, Data, and Artificial Intelligence</a>, AI Thrust Lead </li>
-		</ul>
-
-		<p align="justify">
-		I co-lead the research and development of <a href="https://deephyper.readthedocs.io/en/latest/" target="_blank">DeepHyper</a>, a scalable automated machine learning package for trustworthy and energy-efficient AI model development on DOE leadership-class systems.
-		</p>
-		 
-		 <p align="justify">
-                  I am honored to have received <a href="https://www.anl.gov/article/three-argonne-scientists-receive-doe-early-career-awards" target="_blank"> U.S. Department of Energy Early Career Award</a>, 2018--2023.
-		  My primary research sponsor is the Advanced Scientific Computing Research (ASCR). 
-			 I am also grateful for the funding support from Basic Energy Sciences (BES), Biological and Environmental Research (BER), 
-			 Fusion Energy Sciences (FES), High Energy Physics (HEP), and Nuclear Physics (NP) through SciDAC partnerships, 
-			 and the Office of Energy Efficiency and Renewable Energy (EERE). 
-		 </p>
-		 
-                <p align="justify">
-                    Previously,
-                        <ul class="itemize1" align="justify">
-                            <li class="itemize">2020--2023: R&D Group Leader and Computer Scientist, MCS & LCF Divisions, Argonne National Laboratory</li>
-                            <li class="itemize">2017--2020: Computer Scientist, MCS & LCF Divisions, Argonne National Laboratory</li> 
-                            <li class="itemize">2017--2023: Fellow, Northwestern-Argonne Institute of Science and Engineering, Northwestern University</li>
-                            <li class="itemize">2014--2018: Fellow, Computation Institute, University of Chicago</li>
-                            <li class="itemize">2014--2017: Assistant Computer Scientist, MCS & LCF Divisions, Argonne National Laboratory</li>
-			    <li class="itemize">2012--2015: Co-founder and Chief Technology Officer, inSiliTech LLC</li>
-			    <li class="itemize">2010--2013: Postdoc, MCS Division, Argonne National Laboratory</li>
-                            <li class="itemize">2009--2010: Chief Technology Officer, Mentis SA, Brussels, Belgium</li>
-                        </ul>
-                </p>
-                
-		<!--    
-                From 2013 to 2017, I was an assistant computer scientist and my supervisors were <a href="http://www.mcs.anl.gov/~wild/" target="_blank">Dr. Stefan Wild</a> and <a href="https://www.alcf.anl.gov/staff-directory/kalyan-kumaran" target="_blank">Dr. Kalyan Kumaran</a>.
-                Until 2013, I was a postdoc at Argonne with <a href="http://www.mcs.anl.gov/~wild/" target="_blank">Dr. Stefan Wild</a> and <a href="http://www.mcs.anl.gov/~hovland/" target="_blank">Dr. Paul Hovland</a>.
-                Prior to Argonne, I worked as a Chief Technology Officer at <a href="http://www.mentis-consulting.be/" target="_blank">Mentis Consulting</a>, a machine learning startup in Brussels, Belgium.
-                -->
-                <p align="justify">
-                I received my PhD in 2010 from <a href="https://code.ulb.ac.be/lab/IRIDIA" target="_blank"> CoDE-IRIDIA (AI Lab)</a>, <a href="http://www.ulb.ac.be" target="_blank">Universit&eacute; Libre de Bruxelles</a>, Brussels, Belgium,
-                where I was a recipient of <a href="https://ec.europa.eu/research/mariecurieactions/node_en" target="blank_">Marie Skłodowska-Curie</a> and <a href="http://www.fnrs.be/en/" target="_blank">F.R.S-FNRS Aspirant</a> fellowships from the 
-                the European Commission and the Belgian-French Community's National Fund for Scientific Research, respectively. 
-                <!-- 
-                Supervisors of my doctoral research were <a href="http://iridia.ulb.ac.be/%7Emdorigo" target="_blank">Prof. Marco Dorigo</a>, <a href="http://iridia.ulb.ac.be/%7Embiro" target="_blank">Dr. Mauro Birattari</a>, and <a href="http://iridia.ulb.ac.be/%7Estuetzle" target="_blank">Dr. Thomas St&uuml;tzle</a>.
-                -->
-                </p>
-                <!-- For other postdoctoral and internship opportunities, check <a href="{{ site.baseurl }}jobs.html"> here--> 
-                <!--
-                <h4>News:</h4>
-                <ul class="itemize1" align="justify">
-                    <li class="itemize">ANL PI on new DOE ASCR funded project with University of Southern California, Lawrence Berkeley National Laboratory, and UNC's Rennaisance Computing Institute: <a href="https://sites.google.com/view/poseidon-workflows/home" target="blank_">PosEiDon: Platform for Explainable Distributed Infrastructure</a>. 
-                        We will develop AI/ML based methods to simulate, model and optimize scientific workflow performance on large, distributed DOE computing infrastructures. </li>    
-                    <li class="itemize">Lead PI on new DOE EERE funded project with GE Resarch, GKN Aerospace, and Edison Welding Institute: Probabilistic Machine Learning for Rapid Large-Scale and High-Rate Aerostructure Manufacturing. We will develop a novel probabilistic
-                        ML framework to significantly improve manufacturing efficiency for large-scale aerostructures produced at high rates.</li>               
-                    <li class="itemize">[NeurIPS 2021] <a href="https://arxiv.org/abs/2109.14035" target="blank_">Formalizing the Generalization-Forgetting Trade-off in Continual Learning</a>.</li>
-                    <li class="itemize">[SC 2021] <a href="https://sc21.supercomputing.org/presentation/?id=pap460&sess=sess150" target="blank_">AgEBO-Tabular: Joint Neural Architecture and Hyperparameter Search with Autotuned Data-Parallel Training for Tabular Data</a>.</li>
-                </ul>
-                --> 
+            <div class="item">
+                <h3>Trillion-Parameter Scale</h3>
+                <p>Directed the first trillion-parameter AI model training on the <span class="highlight">Frontier supercomputer</span> (world's fastest). Proved capability to scale foundation models beyond industry standard limits.</p>
             </div>
-      </div>
-      
-      {% include social.html %}
-  </div>
+
+            <div class="item">
+                <h3>Foundational Models (ORBIT)</h3>
+                <p>Developed ORBIT, a 113-billion parameter Vision Transformer. Surpassed previous climate AI foundation models by <span class="highlight">1,000x in size</span>, earning a finalist spot for the ACM Gordon Bell Prize.</p>
+            </div>
+
+            <div class="item">
+                <h3>Strategic Capital & Partnerships</h3>
+                <p>Secured <span class="highlight">$20M+ in direct funding</span> and managed an $8M LDRD portfolio. Established R&D partnerships with NVIDIA, OpenAI, Microsoft, and Google.</p>
+            </div>
+
+            <div class="item">
+                <h3>Open Source Architect</h3>
+                <p>Creator of <span class="highlight">DeepHyper</span> (scalable AutoML) and <span class="highlight">ytopt</span>. My work in automating machine learning workflows is used to optimize complex scientific systems efficiently.</p>
+            </div>
+        </section>
+
+        <footer>
+            <a href="mailto:pbalapra@primalabs.ai" class="link">pbalapra@primalabs.ai</a>
+            <a href="https://linkedin.com/in/prasannaprakash" class="link">LinkedIn</a>
+            <a href="https://github.com/pbalapra" class="link">GitHub</a>
+            <a href="https://pbalapra.github.io/" class="link">Website</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
